@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   movies:
-    image: shivashankar03/pmovies
+    image: shivashankar03/pmovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: shivashankar03/ptrain
+    image: shivashankar03/ptrain:latest
     ports:
       - "82:80"
     deploy:
